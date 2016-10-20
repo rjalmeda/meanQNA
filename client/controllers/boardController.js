@@ -4,6 +4,8 @@ app.controller('boardController', function($scope, $location, $routeParams, boar
             if(!data.data.success){
                 alert('please login');
                 return $location.url('/login');
+            } else {
+                $scope.user = data.data.user
             }
         })
     };
