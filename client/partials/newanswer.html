@@ -1,0 +1,24 @@
+<div class="header">
+    <a href="#/board">Home</a> | <a href="#/show/{{targetQuestion._id}}">Go Back to Question</a> | <a href="" ng-click="logout()">Logout</a>
+</div>
+
+<h1>{{targetQuestion.question}}</h1>
+<h3>{{targetQuestion.description}}</h3>
+
+<div class="newAnswer">
+    <form ng-submit="addAnswer()">
+        <table>
+            <tr>
+                <td>Your Answer</td>
+                <td><textarea ng-model="answer.answer"></textarea></td>
+            </tr>
+            <tr>
+                <td>Supporting Details</td>
+                <td><textarea ng-model="answer.details"></textarea></td>
+            </tr>
+        </table>
+        <a href="#/board"><button type="button" style="margin-left:220px;">Cancel</button></a>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+

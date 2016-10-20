@@ -1,0 +1,29 @@
+form {
+    margin-top: 30px;
+}
+
+textarea {
+    resize: none;
+    width: 240px;
+    height: 80px;
+}
+
+td {
+    vertical-align: top;
+}
+
+div {
+    vertical-align: top;
+}
+
+div.answer {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+div.likes {
+    float: right;
+    margin-top: 30px;
+}

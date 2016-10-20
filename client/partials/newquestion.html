@@ -1,0 +1,20 @@
+<div class="header">
+    <a href="#/board">Home</a> | <a href="" ng-click="logout()">Logout</a>
+</div>
+
+<h1>New Question</h1>
+
+<form ng-submit="addQuestion()">
+    <table>
+        <tr>
+            <td>Question</td>
+            <td><textarea ng-model="question.question"></textarea></td>
+        </tr>
+        <tr>
+            <td>Description<br> (optional)</td>
+            <td><textarea ng-model="question.description"></textarea></td>
+        </tr>
+    </table>
+    <a href="#/board"><button>Cancel</button></a>
+    <button type="submit">Add Question</button>
+</form>
