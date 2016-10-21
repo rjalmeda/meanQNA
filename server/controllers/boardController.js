@@ -22,7 +22,8 @@ module.exports = (function(){
             })
         },
         getTargetQuestion: function(req,res){
-            Question.findOne({_id: req.body.questionid}).populate('answers').populate('user').populate({
+            Question.findOne({_id: req.body.questionid}).populate('user')
+                .populate('answers').populate({
                     path: 'answers',
                     populate: {
                         path: 'user',
